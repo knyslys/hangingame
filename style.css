@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Press Start 2P", cursive;
+}
+.category,
+.high-score,
+.current-score {
+  font-size: 1.3rem;
+}
+
+.category {
+  text-transform: uppercase;
+}
+.restart-btn {
+  margin-top: 10px;
+  font-family: "Press Start 2P", cursive;
+  outline: navajowhite;
+  border: none;
+  padding: 1rem 2rem;
+  background-color: white;
+  border-radius: 500px;
+  display: none;
+}
+.restart-btn:hover {
+  cursor: pointer;
+}
+.container {
+  max-width: 80vw;
+
+  margin: 0 auto;
+}
+.human {
+  display: none;
+}
+
+.hang-container {
+  margin-bottom: 2rem;
+  width: 100%;
+  min-height: 380px;
+  max-height: 380px;
+  /* background-color: aqua; */
+  position: relative;
+  border-radius: 10px;
+  padding: 10px;
+}
+/* kartuviu css */
+.hang {
+  position: absolute;
+  width: 10px;
+  background-color: black;
+}
+
+.hang-right-stick {
+  top: 0;
+  right: 40%;
+  height: 100%;
+}
+
+.hang-top-stick {
+  top: -20%;
+  right: 47%;
+  height: 200px;
+  transform: rotateZ(90deg);
+  /* transform: translateX(50%); */
+}
+
+.rope {
+  top: 5%;
+  right: 47%;
+  height: 100px;
+  width: 5px;
+}
+
+.head {
+  border-radius: 500px;
+  padding: 2rem;
+  height: 20px;
+  background-color: transparent;
+  border: 5px solid black;
+  top: 30%;
+  right: 43.5%;
+}
+
+.body {
+  top: 49%;
+  right: 46.3%;
+  height: 100px;
+}
+
+.larm {
+  top: 54%;
+  right: 48.8%;
+  height: 100px;
+  transform: rotateZ(40deg);
+}
+.rarm {
+  top: 54%;
+  right: 43.99%;
+  height: 100px;
+  transform: rotateZ(-40deg);
+}
+
+.lleg {
+  top: 71%;
+  right: 48.8%;
+  height: 100px;
+  transform: rotateZ(40deg);
+}
+
+.rleg {
+  top: 71%;
+  right: 43.99%;
+  height: 100px;
+  transform: rotateZ(-40deg);
+}
+
+/* kartuviu css end */
+.letters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: bisque;
+  margin-top: 2rem;
+  border-radius: 10px;
+  gap: 3rem;
+  padding: 3rem;
+}
+
+.letter-container {
+  display: flex;
+
+  padding: 1.5rem;
+  min-width: 50px;
+  min-height: 50px;
+  max-width: 50px;
+  max-height: 50px;
+  justify-content: center;
+  align-items: center;
+  /* align-content: flex-end;
+  justify-items: flex-start; */
+}
+
+.letter {
+  background-color: beige;
+  padding: 1.8rem;
+  border-radius: 10px;
+}
+
+.letter:hover {
+  cursor: pointer;
+}
+
+/* answer box */
+
+.answer {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.answer-box {
+  border-bottom: 2px solid black;
+  padding: 1rem 1rem 0 1rem;
+  text-transform: uppercase;
+}
